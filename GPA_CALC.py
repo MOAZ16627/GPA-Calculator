@@ -46,9 +46,12 @@ while subject > 0:
 
 if sumhours > 0:
     GPA = GPA / sumhours
+    GPA_20 = GPA * 5 
+    
     print("\n--- Results ---")
     for idx, (g, val, h) in enumerate(subjects_data, start=1):
         print(f"Subject {idx}: Grade = {g} ({val}), Hours = {h}")
     print(f"\nFinal GPA (out of 4): {round(GPA, 2)}")
+    print(f"Final GPA (out of 20): {round(GPA_20, 2)}")
 else:
     print("No valid subjects entered.")
